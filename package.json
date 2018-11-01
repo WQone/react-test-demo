@@ -5,7 +5,8 @@
     "build": "umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
@@ -30,6 +31,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0"
   }

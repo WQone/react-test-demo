@@ -36,6 +36,13 @@ export default {
       ignore: ['.*'],
     },
   ],
+  manifest: {
+    basePath: '/',
+  },
   sass: {},
   disableCSSModules: true,
+  chainWebpack(config, { webpack }) {
+    // 设置 alias
+    // config.resolve.alias.set('@', './src');
+  },
 };

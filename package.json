@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "set PORT=3000&umi dev",
+    "start": "set PORT=3001&umi dev",
     "build": "umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
@@ -31,6 +31,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0"

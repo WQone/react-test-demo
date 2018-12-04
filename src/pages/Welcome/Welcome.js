@@ -25,7 +25,7 @@ export default class Hello extends Component {
     console.log('render渲染控件的方法');
     const columns = [
       {
-        title: '姓名',
+        title: '姓名121212',
         dataIndex: 'title',
         key: 'title',
       },

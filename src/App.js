@@ -1,5 +1,5 @@
-
-
+import mockInit from './../mock/index';
+mockInit();
 export const dva = {
   config: {
     onError(err) {
@@ -8,4 +8,3 @@ export const dva = {
     },
   },
 };
-

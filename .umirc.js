@@ -1,4 +1,24 @@
 // ref: https://umijs.org/config/
+// const myRoute = require('./src/layouts/menu');
+// console.log('myRoute', myRoute);
+const routesList = [
+  {
+    path: '/',
+    component: '../layouts',
+    routes: [
+      {
+        path: '/',
+        component: './Hello/Hello',
+        name: '首页',
+      },
+      {
+        path: '/Welcome',
+        component: './Welcome/Welcome',
+        name: '欢迎页',
+      },
+    ],
+  },
+];
 export default {
   publicPath: './',
   plugins: [
@@ -18,18 +38,8 @@ export default {
       },
     ],
   ],
-  routes: [
-    {
-      path: '/',
-      component: '../layouts',
-      routes: [
-        {
-          path: '',
-          component: './Hello/Hello',
-        },
-      ],
-    },
-  ],
+  history: 'hash',
+  routes: routesList,
   copy: [
     {
       from: './public',

@@ -1,4 +1,4 @@
-import page from './../../api/page';
+import page from '../../api/page';
 
 import React, { Component } from 'react';
 import { Table } from 'antd';

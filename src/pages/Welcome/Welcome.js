@@ -22,7 +22,7 @@ export default class Hello extends Component {
   }
   render() {
     const { list } = this.state;
-    console.log('render渲染控件的方法', this.a);
+    console.log('render渲染控件的方法');
     const columns = [
       {
         title: '姓名',
